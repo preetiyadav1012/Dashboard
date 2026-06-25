@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "frontend",
+      "name": "Frontend (React)"
+    },
+    {
+      "path": "backend",
+      "name": "Backend (Python)"
+    }
+  ],
+  "settings": {
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    }
+  }
+}
