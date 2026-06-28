@@ -1,0 +1,213 @@
+.assessment-container {
+  padding: 1.5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.assess-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.assess-header-row h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.assess-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+.assess-refresh-btn:hover { background: rgba(255,255,255,0.18); }
+
+.assess-error {
+  background: #fed7d7; color: #742a2a;
+  padding: 0.75rem 1rem; border-radius: 8px;
+  margin-bottom: 1rem; font-size: 0.9rem;
+}
+
+.assess-loading {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: rgba(255,255,255,0.7); padding: 2rem 0; justify-content: center;
+}
+
+/* Summary Cards */
+.assess-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.assess-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.assess-card-icon { font-size: 1.4rem; line-height: 1; }
+.assess-card-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin: 0 0 0.2rem; }
+.assess-card-value { font-size: 1.4rem; font-weight: 700; color: #fff; margin: 0; }
+
+.card-blue   { border-left: 3px solid #4299e1; }
+.card-green  { border-left: 3px solid #48bb78; }
+.card-orange { border-left: 3px solid #f6ad55; }
+.card-purple { border-left: 3px solid #9f7aea; }
+.card-gray   { border-left: 3px solid #a0aec0; }
+
+/* Progress */
+.assess-progress-section {
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.assess-progress-section h3 {
+  color: #fff; margin: 0 0 0.75rem; font-size: 1rem;
+}
+
+.assess-progress-bar-wrap {
+  background: rgba(255,255,255,0.1);
+  border-radius: 99px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.assess-progress-bar {
+  background: linear-gradient(90deg, #48bb78, #38a169);
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.assess-progress-label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Filter Tabs */
+.assess-filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.assess-filter-btn {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+}
+
+.assess-filter-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.assess-filter-btn.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Table */
+.assess-table-wrap {
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow-x: auto;
+}
+
+.assess-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.assess-table thead tr {
+  background: rgba(255,255,255,0.08);
+}
+
+.assess-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: rgba(255,255,255,0.6);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.assess-table td {
+  padding: 0.75rem 1rem;
+  color: rgba(255,255,255,0.85);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  vertical-align: middle;
+}
+
+.assess-table tbody tr:hover { background: rgba(255,255,255,0.04); }
+
+.mono { font-family: monospace; font-size: 0.82rem; }
+.amount { font-weight: 600; color: #fff; }
+.assess-desc { max-width: 220px; }
+.assess-notes { max-width: 200px; font-size: 0.8rem; color: rgba(255,255,255,0.6); }
+.assess-date { font-size: 0.8rem; color: rgba(255,255,255,0.5); white-space: nowrap; }
+
+.no-data {
+  text-align: center; color: rgba(255,255,255,0.4);
+  padding: 2rem 0; margin: 0;
+}
+
+/* Status badges (reuse dashboard vars) */
+.assess-status-badge {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  padding: 0.2rem 0.65rem; border-radius: 20px;
+  font-size: 0.78rem; font-weight: 600; white-space: nowrap;
+}
+.status-ui-draft       { background: #e2e8f0; color: #4a5568; }
+.status-edi-processing { background: #bee3f8; color: #2a4365; }
+.status-edi-complete   { background: #c6f6d5; color: #22543d; }
+.status-edi-accepted   { background: #e9d8fd; color: #44337a; }
+
+/* Risk badges */
+.risk-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.risk-none   { background: #c6f6d5; color: #22543d; }
+.risk-low    { background: #fefcbf; color: #744210; }
+.risk-medium { background: #feebc8; color: #7b341e; }
+.risk-high   { background: #fed7d7; color: #742a2a; }
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
